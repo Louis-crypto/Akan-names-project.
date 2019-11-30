@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Akan names project</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+  <div class="jumbotron">
+    <h1>AKAN NAMES</h1>
+  </div>
+  <div class="container">
+    <p class="description">
+      <span class="A">A</span>kan people often name their children after the day of the week they were born.<br>
+      Fill this form to be able to know what your name would have been and its meaning.
+    </p>
     <p>Birth date:</p>
     <form>
-    Year:<br>
-    <input type="text" name="year"><br>
-    Month:<br>
-    <input type="text" name="month"><br>
-    Date:<br>
-    <input type="text" name="date">
-    </form>
-    <p>Gender</p>
-    <form>
-      <input type="radio" name="gender" value="male" checked> Male<br>
-      <input type="radio" name="gender" value="female"> Female<br><br>
-      <input type="submit" onclick="myFunction()" value="Submit">
-    </form>
+      <p>Year:</p><br>
+      <input id="year" type="number"><br>
+      <p>Month:</p><br>
+      <input id="month" type="number"><br>
+      <p>Date:</p><br>
+      <input id="date" type="number"><br>
+      <input type="radio" name="gender" id="male" value="ale" onclick="myFunction()" checked> Male<br>
+      <input type="radio" name="gender" id="female" value="fmale"> Female<br><br>
+    </form><br>
+    
+  </div>
+  
 </body>
+
 </html>
