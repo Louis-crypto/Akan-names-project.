@@ -40,7 +40,37 @@
       <button href="https://github.com/Louis-crypto/Akan-names-project.">Contribute now</button>
     </div>
   </div>
-  
+  <script>
+    function myFunction() {
+      var year = parseInt(document.getElementById("year").value | 0);
+      var month = parseInt(document.getElementById("month").value | 0);
+      var date = parseInt(document.getElementById("date").value | 0);
+      var d = new Date(year, month, date);
+      var yourDay = d.getDay();
+
+      if (yourDay == 0) {
+        alert("Kwasi");
+      }
+      if (yourDay == 1) {
+        alert("Kwadwo");
+      }
+      if (yourDay == 2) {
+        alert("Kwabena");
+      }
+      if (yourDay == 3) {
+        alert("Kwaku");
+      }
+      if (yourDay == 4) {
+        alert("Yaw");
+      }
+      if (yourDay == 5) {
+        alert("Koffi");
+      }
+      if (yourDay == 6) {
+        alert("Kwame");
+      }
+    }
+  </script>
 </body>
 
 </html>
