@@ -1,0 +1,21 @@
+h1{
+  text-align: center;
+}
+.description{
+  font-size: 24px;
+}
+.A{
+  font-size: 50px;
+}
+.yoname{
+  font-size: 24px;
+  text-decoration: underline;
+}
+.result{
+  font-size: 32px;
+  font-family: 'PT Serif', serif;
+}
+.footer{
+  background-color: grey;
+  color: black;
+}

@@ -1,26 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Akan names project</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <div class="jumbotron">
+    <h1>AKAN NAMES</h1>
+  </div>
+  <div class="container">
+    <p class="description">
+      <span class="A">A</span>kan people often name their children after the day of the week they were born.<br>
+      Fill this form to be able to know what your name would have been and its meaning.
+    </p>
     <p>Birth date:</p>
     <form>
-    Year:<br>
-    <input type="text" name="year"><br>
-    Month:<br>
-    <input type="text" name="month"><br>
-    Date:<br>
-    <input type="text" name="date">
-    </form>
-    <p>Gender</p>
-    <form>
-      <input type="radio" name="gender" value="male" checked> Male<br>
-      <input type="radio" name="gender" value="female"> Female<br><br>
-      <input type="submit" onclick="myFunction()" value="Submit">
-    </form>
+      <p>Year:</p><br>
+      <input id="year" type="number"><br>
+      <p>Month:</p><br>
+      <input id="month" type="number"><br>
+      <p>Date:</p><br>
+      <input id="date" type="number"><br>
+      <input type="radio" name="gender" id="male" value="men" onclick="maleFunction()" checked> Male<br>
+      <input type="radio" name="gender" id="female" value="women" onclick="femaleFunction()"> Female<br><br>
+    </form><br>
+    <section>
+      <p class="yoname">Your Akan name and meaning:</p>
+      <p id="result"></p>
+    </section>
+    <div class="footer">
+      <h3>CONTACTS</h3>
+      <ul>
+        <li>+254 741 534 863</li>
+        <li>odhiambolouis745@gmail.com</li>
+      </ul>
+      <p>Help Louis-crypto grow</p>
+      <button href="https://github.com/Louis-crypto/Akan-names-project.">Contribute now</button>
+    </div>
+  </div>
+  <script>
+
+    function maleFunction() {
+      var year = parseInt(document.getElementById("year").value | 0);
+      var month = parseInt(document.getElementById("month").value | 0);
+      var date = parseInt(document.getElementById("date").value | 0);
+      var d = new Date(year, month, date);
+      var yourDay = d.getDay();
+
+      if (yourDay == 0) {
+        document.getElementById("result").innerHTML += "KWASI: which means agility";
+      }
+      if (yourDay == 1) {
+        document.getElementById("result").innerHTML += "KWADWO: which means peace";
+      }
+      if (yourDay == 2) {
+        document.getElementById("result").innerHTML += "KWABENA: which means friendliness";
+      }
+      if (yourDay == 3) {
+        document.getElementById("result").innerHTML += "KWAKU: which means evil";
+      }
+      if (yourDay == 4) {
+        document.getElementById("result").innerHTML += "YAW: which means brave";
+      }
+      if (yourDay == 5) {
+        document.getElementById("result").innerHTML += "KOFFI: which means wanderer or traveller";
+      }
+      if (yourDay == 6) {
+        document.getElementById("result").innerHTML += "KWAME: which means combat-ready";
+      }
+    }
+
+    function femaleFunction() {
+      var year = parseInt(document.getElementById("year").value | 0);
+      var month = parseInt(document.getElementById("month").value | 0);
+      var date = parseInt(document.getElementById("date").value | 0);
+      var d = new Date(year, month, date);
+      var yourDay = d.getDay();
+
+      if (yourDay == 0) {
+        document.getElementById("result").innerHTML += "AKOSUA: which means agility";
+      }
+      if (yourDay == 1) {
+        document.getElementById("result").innerHTML += "ADWOA: which means peace";
+      }
+      if (yourDay == 2) {
+        document.getElementById("result").innerHTML += "ABENA: which means friendliness";
+      }
+      if (yourDay == 3) {
+        document.getElementById("result").innerHTML += "AKUA: which means evil";
+      }
+      if (yourDay == 4) {
+        document.getElementById("result").innerHTML += "YAA: which means brave";
+      }
+      if (yourDay == 5) {
+        document.getElementById("result").innerHTML += "AFUA: which means wanderer or traveller";
+      }
+      if (yourDay == 6) {
+        document.getElementById("result").innerHTML += "AMMA: which means creation or grace";
+      }
+    }
+  </script>
 </body>
+
 </html>
