@@ -9,6 +9,10 @@ h1{
 }
 .yoname{
   font-size: 24px;
+  text-decoration: underline;
+}
+.result{
+  font-size: 24px;
 }
 .footer{
   background-color: grey;
