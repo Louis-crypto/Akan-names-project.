@@ -27,9 +27,13 @@
       <input id="month" type="number"><br>
       <p>Date:</p><br>
       <input id="date" type="number"><br>
-      <input type="radio" name="gender" id="male" value="ale" onclick="myFunction()" checked> Male<br>
-      <input type="radio" name="gender" id="female" value="fmale"> Female<br><br>
+      <input type="radio" name="gender" id="male" value="men" onclick="maleFunction()" checked> Male<br>
+      <input type="radio" name="gender" id="female" value="women" onclick="femaleFunction()"> Female<br><br>
     </form><br>
+    <section>
+      <p>Your Akan name and meaning:</p>
+      <p id="result"></p>
+    </section>
     <div class="footer">
       <h3>CONTACTS</h3>
       <ul>
@@ -41,7 +45,8 @@
     </div>
   </div>
   <script>
-    function myFunction() {
+    
+    function maleFunction() {
       var year = parseInt(document.getElementById("year").value | 0);
       var month = parseInt(document.getElementById("month").value | 0);
       var date = parseInt(document.getElementById("date").value | 0);
@@ -68,6 +73,36 @@
       }
       if (yourDay == 6) {
         alert("Kwame");
+      }
+    }
+
+    function femaleFunction() {
+      var year = parseInt(document.getElementById("year").value | 0);
+      var month = parseInt(document.getElementById("month").value | 0);
+      var date = parseInt(document.getElementById("date").value | 0);
+      var d = new Date(year, month, date);
+      var yourDay = d.getDay();
+
+      if (yourDay == 0) {
+        alert("Akosua");
+      }
+      if (yourDay == 1) {
+        alert("Adwoa");
+      }
+      if (yourDay == 2) {
+        alert("Abena");
+      }
+      if (yourDay == 3) {
+        alert("Akua");
+      }
+      if (yourDay == 4) {
+        alert("Yaa");
+      }
+      if (yourDay == 5) {
+        alert("Afua");
+      }
+      if (yourDay == 6) {
+        alert("Ama");
       }
     }
   </script>
