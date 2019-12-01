@@ -45,7 +45,7 @@
     </div>
   </div>
   <script>
-    
+
     function maleFunction() {
       var year = parseInt(document.getElementById("year").value | 0);
       var month = parseInt(document.getElementById("month").value | 0);
@@ -54,13 +54,13 @@
       var yourDay = d.getDay();
 
       if (yourDay == 0) {
-        alert("Kwasi");
+        document.getElementById("result").innerHTML += "Kwasi";
       }
       if (yourDay == 1) {
         alert("Kwadwo");
       }
       if (yourDay == 2) {
-        alert("Kwabena");
+        document.getElementById("result").innerHTML += "Kwabena";
       }
       if (yourDay == 3) {
         alert("Kwaku");
