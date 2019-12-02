@@ -1,3 +1,7 @@
+body{
+  background-color: black;
+  color: white;
+}
 h1{
   text-align: center;
 }
@@ -22,6 +26,7 @@ input{
 .footer{
   background-color: grey;
   color: black;
+  text-align: center;
 }
 .contribution{
   text-align: center;
