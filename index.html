@@ -14,30 +14,72 @@
 <body>
   <div class="jumbotron">
     <div class="heading">
-    <img src="images/akan1.jpeg" alt="akan profile">
-    <h1>AKAN NAMES</h1>
-  </div>
+      <img src="images/akan1.jpeg" alt="akan profile">
+      <h1>AKAN NAMES</h1>
+    </div>
   </div>
   <div class="container">
-    <p class="description">
-      <span class="A">A</span>kan people often name their children after the day of the week they were born.<br>
-      Fill this form to be able to know what your name would have been and its meaning.
-    </p>
-    <p>Birth date:</p>
-    <form>
-      <p>Year:</p>
-      <input id="year" type="number"><br>
-      <p>Month:</p>
-      <input id="month" type="number"><br>
-      <p>Date:</p>
-      <input id="date" type="number"><br>
-      <input type="radio" name="gender" id="male" value="men" onclick="maleFunction()" checked> Male<br>
-      <input type="radio" name="gender" id="female" value="women" onclick="femaleFunction()"> Female<br><br>
-    </form><br>
-    <section>
-      <p class="yoname">Your Akan name and meaning:</p>
-      <p id="result"></p>
-    </section>
+    <div class="row">
+      <div class="col-md-6">
+        <p class="description">
+          <span class="A">A</span>kan people often name their children after the day of the week they were born.<br>
+          Fill this form to be able to know what your name would have been and its meaning.
+        </p>
+        <p>Birth date:</p>
+        <form>
+          <p>Year:</p>
+          <input id="year" type="number"><br>
+          <p>Month:</p>
+          <input id="month" type="number"><br>
+          <p>Date:</p>
+          <input id="date" type="number"><br>
+          <input type="radio" name="gender" id="male" value="men" onclick="maleFunction()" checked> Male<br>
+          <input type="radio" name="gender" id="female" value="women" onclick="femaleFunction()"> Female<br><br>
+        </form><br>
+        <section>
+          <p class="yoname">Your Akan name and meaning:</p>
+          <p id="result"></p>
+        </section>
+      </div>
+      <div id="col2" class="col-md-6">
+        <h3>Akan names generator</h3>
+        <table class="table">
+          <tr>
+            <th>Name</th>
+            <th>Day</th>
+          </tr>
+          <tr>
+            <td>Kwasi/Akosua</td>
+            <td>Sunday</td>
+          </tr>
+          <tr>
+            <td>Kwadwo/Adwoa</td>
+            <td>Monday</td>
+          </tr>
+          <tr>
+            <td>Kwabena/Abena</td>
+            <td>Tuesday</td>
+          </tr>
+          <tr>
+            <td>Kwaku/Akua</td>
+            <td>Wednesday</td>
+          </tr>
+          <tr>
+            <td>Yaw/Yaa</td>
+            <td>Thursday</td>
+          </tr>
+          <tr>
+            <td>Koffi/Afua</td>
+            <td>Friday</td>
+          </tr>
+          <tr>
+            <td>Kwame/Amma</td>
+            <td>Saturday</td>
+          </tr>
+        </table>
+        <img src="images/akan2.jpeg" alt="logo">
+      </div>
+    </div>
     <div class="footer">
       <h3>CONTACTS</h3>
       <ul>
@@ -45,13 +87,12 @@
         <li>odhiambolouis745@gmail.com</li>
       </ul>
       <div class="contribution">
-      <p>Help Louis-crypto grow</p>
-      <a href="https://github.com/Louis-crypto/Akan-names-project."><button >Contribute now</button></a>
-    </div>
+        <p>Help Louis-crypto grow</p>
+        <a href="https://github.com/Louis-crypto/Akan-names-project."><button>Contribute now</button></a>
+      </div>
     </div>
   </div>
   <script>
-
     function maleFunction() {
       var year = parseInt(document.getElementById("year").value | 0);
       var month = parseInt(document.getElementById("month").value | 0);

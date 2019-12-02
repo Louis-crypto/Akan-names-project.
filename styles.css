@@ -29,6 +29,9 @@ input{
   font-family: 'PT Serif', serif;
   color: goldenrod;
 }
+#col2{
+  border: 2px solid white;
+}
 .footer{
   background-color: grey;
   color: black;
