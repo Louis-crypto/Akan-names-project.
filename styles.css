@@ -30,7 +30,7 @@ input{
   color: goldenrod;
 }
 #col2{
-  border: 2px solid white;
+  border-left: 2px solid white;
 }
 .footer{
   background-color: grey;
