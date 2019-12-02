@@ -2,6 +2,9 @@ body{
   background-color: black;
   color: white;
 }
+.heading{
+  text-align: center;
+}
 h1{
   text-align: center;
   color: black;
