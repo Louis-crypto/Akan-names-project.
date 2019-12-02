@@ -7,7 +7,9 @@ body{
 }
 h1{
   text-align: center;
-  color: black;
+  color: goldenrod;
+  padding-top: 5px;
+  text-decoration: underline;
 }
 .description{
   font-size: 24px;
@@ -25,12 +27,15 @@ input{
 #result{
   font-size: 32px;
   font-family: 'PT Serif', serif;
-  color: blue;
+  color: goldenrod;
 }
 .footer{
   background-color: grey;
   color: black;
   text-align: center;
+}
+.footer ul li{
+  list-style: none;
 }
 .contribution{
   text-align: center;
