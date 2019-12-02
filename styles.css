@@ -11,9 +11,10 @@ h1{
   font-size: 24px;
   text-decoration: underline;
 }
-.result{
+#result{
   font-size: 32px;
   font-family: 'PT Serif', serif;
+  color: blue;
 }
 .footer{
   background-color: grey;
