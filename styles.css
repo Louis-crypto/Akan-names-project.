@@ -1,11 +1,24 @@
+body{
+  background-color: black;
+  color: white;
+}
+.heading{
+  text-align: center;
+}
 h1{
   text-align: center;
+  color: goldenrod;
+  padding-top: 5px;
+  text-decoration: underline;
 }
 .description{
   font-size: 24px;
 }
 .A{
   font-size: 50px;
+}
+input{
+  border: 2px solid grey;
 }
 .yoname{
   font-size: 24px;
@@ -14,9 +27,22 @@ h1{
 #result{
   font-size: 32px;
   font-family: 'PT Serif', serif;
-  color: blue;
+  color: goldenrod;
+}
+#col2{
+  border: 2px solid white;
 }
 .footer{
   background-color: grey;
   color: black;
+  text-align: center;
+}
+.footer ul li{
+  list-style: none;
+}
+.contribution{
+  text-align: center;
+}
+button{
+  background-color: rgb(87, 87, 187);
 }

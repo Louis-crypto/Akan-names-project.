@@ -14,7 +14,9 @@ and get to know what their name would have been in ghana [try it](https://louis-
 * JavaScript
 
 ### Installation instructions
-This project runs on most browsers, 
+* Clone project from github
+* Ensure all files are there ie, index.html, styles.css, bootstrap.css
+* copy index.html path to your browser and fill the form to run page.
 
 ### support and contact details
 You can conribute to my code and help me grow, contact me via;
